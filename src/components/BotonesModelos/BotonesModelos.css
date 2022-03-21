@@ -1,0 +1,56 @@
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.btn-card-green,
+.btn-card-red,
+.btn-card-showroom {
+  text-decoration: none;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--color-secondary);
+
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+.btn-card-green {
+  background-color: var(--color-secondary);
+  color: #ffd800;
+  width: 90%;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.btn-card-showroom {
+  width: 100%;
+  background-color: var(--color-branding);
+  color: var(--black);
+  font-weight: bold;
+  display: block;
+}
+
+.btn-card-comparar__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-card-comparar {
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  color: var(--black);
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 2rem auto;
+}
+@media screen and (min-width: 820px) {
+  .btn-card-green,
+  .btn-card-red,
+  .btn-card-showroom {
+    font-size: 2rem;
+  }
+}

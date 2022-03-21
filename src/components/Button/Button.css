@@ -1,0 +1,35 @@
+.btn {
+  background-color: var(--color-secondary);
+  color: var(--white);
+  padding: 1.5rem 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2rem;
+  border: none;
+}
+
+.btn__showroom {
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 10000;
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .btn__showroom {
+    left: 41%;
+    padding: 1rem 1.5rem;
+    bottom: 31%;
+  }
+}
+
+.none {
+  display: none;
+}

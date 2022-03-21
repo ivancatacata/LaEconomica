@@ -1,0 +1,48 @@
+:root {
+  --color-branding: #bebebe;
+  --color-secondary: #c51225;
+  --color-resalt: #28a745;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #dbdbdb;
+  --font-heading: "Roboto", sans-serif;
+  --font-text: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
+body {
+  font-family: var(--font-text);
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+.cargaContenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cargaContenedor video {
+  width: 50%;
+}
+/*Utilities*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  /* padding: 1rem 0; */
+}
+small {
+  color: var(--color-secondary);
+}

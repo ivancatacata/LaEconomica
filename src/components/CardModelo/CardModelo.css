@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("../../assets/GOTHAM-BLACK.OTF") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.cardModelo {
+  display: grid;
+  align-items: center;
+  background-color: var(--white);
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+
+  color: var(--color-secondary);
+  margin-bottom: 50px;
+}
+.etiqueta {
+  position: absolute;
+  width: 50% !important;
+  transform: translateX(-89%);
+}
+
+.cardModelo h3 {
+  text-align: left;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.cardImagen {
+  display: flex;
+  justify-content: left;
+}
+.cardImagen img {
+  margin: 2rem auto 0 auto;
+  width: 90%;
+}
+.precioCard {
+  font-family: "Gotham-black";
+  font-size: 2rem;
+}
+.cardDescription {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+.modeloCard {
+  font-family: "Gotham-black";
+  margin-left: 4.5rem;
+  color: var(--white);
+  position: absolute;
+  display: flex;
+  align-self: end;
+}
+.cardDescription .cardDescription__item:nth-child(2) {
+  padding-left: 15px;
+
+  padding-right: 15px;
+}
+.cardDescription__item {
+  display: flex;
+}
+.cardDescription__item img {
+  width: 3rem;
+  height: min-content !important;
+  display: inline-block;
+  margin: auto;
+  margin-right: 2px;
+}
+
+.cardDescription__item p {
+  margin: auto 0;
+  font-size: .9rem;
+}
+.cardText {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fbd81e;
+  font-size: 4rem;
+}
+.precioContainer {
+  text-align: center;
+}
+.cardText hr {
+  height: 1px;
+  background: var(--color-secondary);
+  border: none;
+  width: 80%;
+}
+.precio-cuota {
+  color: #e7cb34;
+}
+
+
+@media screen and (min-width: 730px){
+  .cardDescription__item p {
+    margin: auto 0;
+    font-size: 1.5rem;
+  }
+  .cardDescription__item img {
+    display: inline-block;
+    width: 5rem;
+    margin-right: 15px;
+  }
+  .cardModelo h3 {
+    font-size: 3.5rem;
+  }
+  .precioEtiqueta {
+    font-size: 4rem;
+    transform: translateX(-100%) translateY(15%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardDescription__item p {
+    font-size: 1.4rem;
+  }
+  .precioCard{
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .cardModelo {
+    width: 90%;
+  }
+  .cardDescription__item p {
+    font-size: 2rem !important;
+  }
+}
+@keyframes precio {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: var(--color-secondary);
+  }
+}
